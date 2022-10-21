@@ -1,0 +1,16 @@
+<div class="container mt-3">
+  <div class="row">
+    <h1>List your place...</h1>
+  </div>
+  <hr>
+  <div class="container bg-light py-3 mb-4 rounded border">
+    <%= simple_form_for [@flat] do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :description %>
+      <%= f.input :price_per_night %>
+      <%= f.input :number_of_guests %>
+      <%= f.submit "Add flat", class: "btn btn-danger" %>
+    <% end %>
+  </div>
+</div>
